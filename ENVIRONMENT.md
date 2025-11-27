@@ -16,18 +16,18 @@
 
 ### นาย B ต๊อก
 - OS: Windows 11
-- Git version: 2.43.0
-- Node.js version: v20.9.0
-- npm version: 10.1.0
+- Git version: 2.49.0
+- Node.js version: v25.2.1
+- npm version: 11.6.2
 
 ### นางสาว C ฝน
 - OS: Windows 11
 - Git version: 2.43.0
-- Node.js version: v20.9.0
-- npm version: 10.1.0
+- Node.js version: v20.19.5
+- npm version: 10.8.2
 
 ### นางสาว D ข้าวตัง
 - OS: Windows 11
 - Git version: 2.43.0
-- Node.js version: v20.9.0
-- npm version: 10.1.0
+- Node.js version: v20.19.5
+- npm version: 10.8.2
