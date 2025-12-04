@@ -13,7 +13,7 @@
 ## 👥 Team Members (Group 03)
 | Name | Student ID | Role | GitHub |
 |------|-----------|------|--------|
-| นาย อดิเทพ เครือปาน | 67543206028-2 | Leader / PM | [@username](https://github.com/username) |
+| นาย อดิเทพ เครือปาน | 67543206028-2 | Leader / PM | [@2t3t](https://github.com/2t3t) |
 | นาย ธนกฤต อินทจักร์ | 67543206055-5 | Tester / QA | [@TImessi](https://github.com/TImessi) |
 | น.ส. ธัญลักษณ์ ศรีวิชัยนวล | 67543206060-5 | Frontend / UX | [@Rainnie-Yizhan](https://github.com/Rainnie-Yizhan) |
 | น.ส. ฑิตฐิตา ประจำเมือง | 67543206006-7 | Backend / Logic | [@username](https://github.com/username) |
