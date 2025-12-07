@@ -16,7 +16,7 @@
 | นาย อดิเทพ เครือปาน | 67543206028-2 | Leader / PM | [@2t3t](https://github.com/2t3t) |
 | นาย ธนกฤต อินทจักร์ | 67543206055-5 | Tester / QA | [@TImessi](https://github.com/TImessi) |
 | น.ส. ธัญลักษณ์ ศรีวิชัยนวล | 67543206060-5 | Frontend / UX | [@Rainnie-Yizhan](https://github.com/Rainnie-Yizhan) |
-| น.ส. ฑิตฐิตา ประจำเมือง | 67543206006-7 | Backend / Logic | [@username](https://github.com/username) |
+| น.ส. ฑิตฐิตา ประจำเมือง | 67543206006-7 | Backend / Logic | [@Thitthita01](https://github.com/Thitthita01) |
 
 ## 🚀 Features
 ### Current Release (Lab 02)
