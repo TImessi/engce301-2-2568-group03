@@ -2,21 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Labs · ENGCE301 Lab Submission Portal</title>
+    <title>My Labs · Status</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <div class="page-container">
-
-    <!-- HEADER -->
     <header class="site-header">
         <div class="logo">
-            <span class="logo-mark">ENGCE301</span>
-            <span class="logo-text">Lab Submission Portal</span>
+            <span class="logo-mark">DEV.PORTAL</span>
+            <span class="logo-text">ENGCE301</span>
         </div>
-
         <nav class="main-nav">
             <a href="index.html" class="nav-link">Home</a>
             <a href="my-labs.html" class="nav-link active">My Labs</a>
@@ -24,76 +22,58 @@
         </nav>
     </header>
 
-    <!-- CONTENT -->
     <main>
-        <section class="section section-status">
+        <section class="section">
             <header class="section-header">
                 <h2>My Lab Status</h2>
-                <p>
-                    This page extends <strong>US-03: View My Lab Status</strong>
-                    and can be used as a starting point for the real implementation.
-                </p>
+                <p>Implementation of <strong>UC-04 View My Lab Status</strong> and <strong>FR-4 Late Policy</strong>.</p>
             </header>
 
-            <!-- TODO: Student – ปรับ mock data ให้ตรงกับ LAB จริงของกลุ่ม -->
             <div class="status-table">
                 <div class="status-row status-header">
-                    <span>Lab</span>
-                    <span>Title</span>
+                    <span>Lab ID</span>
+                    <span>Assignment Title</span>
                     <span>Status</span>
                     <span>Score</span>
                 </div>
 
                 <div class="status-row">
-                    <span>LAB 1</span>
-                    <span>HTML Structure &amp; Semantic</span>
-                    <span><span class="status-tag status-done">Submitted</span></span>
-                    <span>100 / 100</span>
+                    <span>LAB 01</span>
+                    <span>Intro to Software Engineering</span>
+                    <span><span class="status-tag status-done">Graded</span></span>
+                    <span>10/10</span>
                 </div>
 
                 <div class="status-row">
-                    <span>LAB 2</span>
+                    <span>LAB 02</span>
                     <span>Requirements Elicitation</span>
                     <span><span class="status-tag status-done">Submitted</span></span>
-                    <span>85 / 100</span>
+                    <span>Pending</span>
                 </div>
 
                 <div class="status-row">
-                    <span>LAB 3</span>
-                    <span>Agile Requirements &amp; Use Case Modeling</span>
-                    <span><span class="status-tag status-pending">Awaiting Submission</span></span>
-                    <span>–</span>
+                    <span>LAB 03</span>
+                    <span>Agile & Use Case Modeling</span>
+                    <span><span class="status-tag status-pending">In Progress</span></span>
+                    <span>-</span>
                 </div>
 
                 <div class="status-row">
-                    <span>LAB 4</span>
-                    <span><!-- TODO: ชื่อ LAB 4 ของกลุ่ม --></span>
+                    <span>LAB 04</span>
+                    <span>HTML Forms & Input</span>
                     <span><span class="status-tag status-late">Late</span></span>
-                    <span><!-- TODO: คะแนน / หมายเหตุ --></span>
-                </div>
-
-                <div class="status-row">
-                    <span>LAB 5</span>
-                    <span><!-- TODO: ชื่อ LAB 5 ของกลุ่ม --></span>
-                    <span><span class="status-tag status-pending">Not Assigned</span></span>
-                    <span>–</span>
+                    <span>0/10</span>
                 </div>
             </div>
 
-            <p class="section-note">
-                <!-- TODO: Student – เชื่อมโยงข้อความนี้กับ Late Submission Policy ใน SRS/Use Case -->
-                Status labels (Submitted / Late / Awaiting Submission) should follow
-                the Late Submission Policy defined in your SRS and UC-01 / UC-03.
+            <p style="margin-top: 20px; font-size: 0.9rem; color: var(--color-text-muted);">
+                <strong>* Policy Note (FR-4):</strong> Late submissions are accepted within 3 days but capped at 80% score.
             </p>
         </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="site-footer">
-        <p>ENGCE301 – Software Design &amp; Development · Week 3</p>
-        <p class="footer-small">
-            My Labs page: extend this mockup into a real status page in future iterations.
-        </p>
+        <p>© 2025 ENGCE301 Student Group.</p>
     </footer>
 </div>
 

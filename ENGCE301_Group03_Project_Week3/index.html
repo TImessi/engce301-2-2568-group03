@@ -2,200 +2,114 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ENGCE301 Lab Submission Portal</title>
+    <title>ENGCE301 Lab Portal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- TODO: Student – ถ้าต้องการใช้ Google Fonts ให้เพิ่ม <link> ที่นี่
-         และไปกำหนดในตัวแปร --font-sans ที่ styles.css -->
-    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Main Layout Container -->
     <div class="page-container">
 
-        <!-- ========== HEADER + NAVBAR ========== -->
         <header class="site-header">
             <div class="logo">
-                <!-- สามารถใส่โลโก้มหาวิทยาลัย หรือใช้ตัวอักษรแทน -->
-                <span class="logo-mark">ENGCE301</span>
-                <span class="logo-text">Lab Submission Portal</span>
+                <span class="logo-mark">DEV.PORTAL</span>
+                <span class="logo-text">ENGCE301</span>
             </div>
-
             <nav class="main-nav">
-                <!-- TODO: Student – ตรวจสอบลิงก์ให้ทำงานได้ครบทั้ง 3 หน้า -->
                 <a href="index.html" class="nav-link active">Home</a>
                 <a href="my-labs.html" class="nav-link">My Labs</a>
                 <a href="about.html" class="nav-link">About</a>
             </nav>
         </header>
 
-        <!-- ========== HERO SECTION ========== -->
         <main>
             <section class="hero-section">
                 <div class="hero-content">
-                    <!-- TODO: Student – ปรับข้อความ Hero ให้สอดคล้องกับ SRS/User Stories ของกลุ่ม
-                         ตัวอย่าง: เน้นเรื่องการส่งงาน, การดูสถานะ, ความยุติธรรมของการให้คะแนน -->
-                    <h1>Manage your ENGCE301 lab submissions in one place.</h1>
+                    <h1>Your Central Hub for Lab Submissions.</h1>
                     <p class="hero-subtitle">
-                        View lab details, submit your work, and track your grades
-                        according to the requirements defined in your SRS &amp; User Stories.
+                        Track deadlines, submit assignments, and review grades seamlessly.
+                        Designed based on <strong>UC-03 Submit Lab</strong> and <strong>UC-04 View Status</strong>.
                     </p>
-
-                    <div class="hero-actions">
-                        <a href="#upcoming-labs" class="btn primary">
-                            View Upcoming Labs
-                        </a>
-                        <a href="#my-status" class="btn secondary">
-                            Check My Lab Status
-                        </a>
+                    <div>
+                        <a href="#upcoming-labs" class="btn primary">View Assignments</a>
+                        <a href="my-labs.html" class="btn secondary">Check Status</a>
                     </div>
-
-                    <p class="hero-note">
-                        <!-- TODO: Student – แทนค่าด้วยข้อความที่โยงกับ Use Case เช่น UC-01 Submit Lab -->
-                        This page is designed from UC-01: Submit Lab and US-01 / US-03.
-                    </p>
                 </div>
 
-                <div class="hero-visual">
-                    <!-- Infographic แบบง่าย ใช้กล่องแทน "Flow" ของ Use Case -->
-                    <div class="hero-flow-card">
-                        <div class="flow-step">SRS</div>
-                        <span class="flow-arrow">→</span>
-                        <div class="flow-step">User Stories</div>
-                        <span class="flow-arrow">→</span>
-                        <div class="flow-step">Use Cases</div>
-                        <span class="flow-arrow">→</span>
-                        <div class="flow-step">Web UI</div>
-                    </div>
-                    <p class="hero-visual-caption">
-                        From requirements to a real interface.
-                    </p>
+                <div class="hero-flow-card">
+                    <div class="flow-step">1. Check Requirements (SRS)</div>
+                    <div class="flow-step">2. Design Use Cases (UC-01 to UC-06)</div>
+                    <div class="flow-step">3. Build Web Interface (HTML/CSS)</div>
+                    <div class="flow-step" style="border-left-color: var(--color-secondary);">4. Deploy & Submit</div>
                 </div>
             </section>
 
-            <!-- ========== UPCOMING LABS SECTION ========== -->
-            <section id="upcoming-labs" class="section section-labs">
+            <section id="upcoming-labs" class="section">
                 <header class="section-header">
-                    <h2>Upcoming Labs</h2>
-                    <p>Based on your SRS &amp; Product Backlog (User Stories)</p>
+                    <h2>Current Assignments</h2>
+                    <p class="text-muted">Derived from Product Backlog & UC-01 View Lab List</p>
                 </header>
 
                 <div class="labs-grid">
-                    <!-- ตัวอย่างการ์ด Lab 1 (ทำให้แล้ว) -->
                     <article class="lab-card">
                         <div class="lab-meta">
                             <span class="badge badge-lab">LAB 3</span>
-                            <span class="lab-deadline">Due: 2025-02-10</span>
+                            <span>Due: Feb 10</span>
                         </div>
-                        <h3>Agile Requirements &amp; Use Case Modeling</h3>
+                        <h3>Agile Req. & Use Case Modeling</h3>
                         <p class="lab-desc">
-                            Convert SRS into User Stories and Use Case Scenarios
-                            for the ENGCE301 Lab Submission Portal.
+                            Create SRS, User Stories, and Use Case Diagrams. 
+                            Then build this HTML/CSS prototype.
                         </p>
                         <ul class="lab-tags">
-                            <li>#UserStory</li>
                             <li>#UseCase</li>
-                            <li>#SRS</li>
+                            <li>#Figma</li>
+                            <li>#HTML/CSS</li>
                         </ul>
                     </article>
 
-                    <!-- TODO: Student – เพิ่ม Lab Card อย่างน้อย 2 ใบ ให้ตรงกับ Backlog ของกลุ่ม
-                         ตัวอย่าง: LAB 4 – HTML Form for Submit Lab, LAB 5 – Authentication, etc. -->
-                    <article class="lab-card todo">
+                    <article class="lab-card">
                         <div class="lab-meta">
                             <span class="badge badge-lab">LAB 4</span>
-                            <span class="lab-deadline">Due: 2025-12-18</span>
+                            <span>Due: Feb 17</span>
                         </div>
-                        <h3>HTML Form for Submit Lab</h3>
+                        <h3>HTML5 Forms & Validation</h3>
                         <p class="lab-desc">
-                            <!-- TODO: คำอธิบายสั้น ๆ ของ LAB ที่เชื่อมกับ User Story จริง -->
+                            Implement the real "Submit Lab" form (UC-03) with file upload
+                            and client-side validation.
                         </p>
                         <ul class="lab-tags">
-                            <!-- TODO: แท็กที่เกี่ยวข้อง เช่น #HTML #CSS #BoxModel -->
+                            <li>#Forms</li>
+                            <li>#Validation</li>
+                            <li>#JavaScript</li>
                         </ul>
                     </article>
 
-                    <article class="lab-card todo">
-                        <!-- TODO: Student – Lab Card เพิ่มเติม -->
+                    <article class="lab-card">
+                        <div class="lab-meta">
+                            <span class="badge badge-lab">LAB 5</span>
+                            <span>Due: Feb 24</span>
+                        </div>
+                        <h3>Responsive Layouts (Grid/Flex)</h3>
+                        <p class="lab-desc">
+                            Enhance the UI for mobile devices and implement 
+                            UC-04 (My Status) responsive table.
+                        </p>
+                        <ul class="lab-tags">
+                            <li>#Responsive</li>
+                            <li>#Flexbox</li>
+                            <li>#MediaQueries</li>
+                        </ul>
                     </article>
                 </div>
             </section>
-
-            <!-- ========== MY STATUS SECTION ========== -->
-            <section id="my-status" class="section section-status">
-                <header class="section-header">
-                    <h2>My Lab Status (Mock Data)</h2>
-                    <p>
-                        This section represents <strong>US-03: View My Lab Status</strong>.
-                        Replace the mock data with real data in future terms.
-                    </p>
-                </header>
-
-                <div class="status-table">
-                    <div class="status-row status-header">
-                        <span>Lab</span>
-                        <span>Title</span>
-                        <span>Status</span>
-                        <span>Score</span>
-                    </div>
-
-                    <!-- แถวตัวอย่าง 1 -->
-                    <div class="status-row">
-                        <span>LAB 1</span>
-                        <span>HTML Structure &amp; Semantic</span>
-                        <span><span class="status-tag status-done">Submitted</span></span>
-                        <span>100 / 100</span>
-                    </div>
-
-                    <!-- แถวตัวอย่าง 2 -->
-                    <div class="status-row">
-                        <span>LAB 2</span>
-                        <span>Requirements Elicitation</span>
-                        <span><span class="status-tag status-done">Submitted</span></span>
-                        <span>–</span>
-                    </div>
-
-                    <!-- TODO: Student – เพิ่มแถว mock data สำหรับ LAB 3-5
-                         และใช้ class status-pending / status-late ตามเงื่อนไขที่กลุ่มกำหนด -->
-                    <div class="status-row todo">
-                        <span>LAB 3</span>
-                        <span><!-- TODO: ชื่อ LAB 3 ของกลุ่ม --></span>
-                        <span><span class="status-tag status-pending">TODO</span></span>
-                        <span>–</span>
-                    </div>
-
-                    <div class="status-row todo">
-                        <span>LAB 4</span>
-                        <span><!-- TODO: ชื่อ LAB 3 ของกลุ่ม --></span>
-                        <span><span class="status-tag status-pending">TODO</span></span>
-                        <span>–</span>
-                    </div>
-
-                    <div class="status-row todo">
-                        <span>LAB 5</span>
-                        <span><!-- TODO: ชื่อ LAB 3 ของกลุ่ม --></span>
-                        <span><span class="status-tag status-pending">TODO</span></span>
-                        <span>–</span>
-                    </div>
-                </div>
-
-                <p class="section-note">
-                    <!-- TODO: Student – เขียนข้อความอธิบายเชื่อมกับ Late Submission Policy จาก SRS -->
-                    Note: Late submissions will be marked according to the policy defined in your SRS.
-                </p>
-            </section>
-
         </main>
 
-        <!-- ========== FOOTER ========== -->
         <footer class="site-footer">
-            <p>ENGCE301 – Software Design &amp; Development · Week 3</p>
-            <p class="footer-small">
-                This UI is derived from SRS, User Stories, and Use Cases created in LAB 3.
-            </p>
+            <p>© 2025 ENGCE301 Student Group. All rights reserved.</p>
+            <p>System developed based on Lab 3 SRS & Use Cases.</p>
         </footer>
     </div>
-
 </body>
 </html>
